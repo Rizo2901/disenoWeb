@@ -3,15 +3,15 @@
       xmlns:th="http://www.thymeleaf.org">
     <head th:replace="~{layout/plantilla :: head}">
         <title>TODO supply a title</title>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8"/>
         
     </head>
     <body>
         <header th:replace="~{layout/plantilla :: header}"/>
         
-        <section th:replace="~{categoria/fragmentos :: botonesAgregar}"/>
-        <section th:replace="~{categoria/fragmentos :: agregarCategoria}"/>
-        <section th:replace="~{categoria/fragmentos :: listadoCategorias}"/>
+        <section th:replace="~{producto/fragmentos :: botonesAgregar}"/>
+        <section th:replace="~{producto/fragmentos :: agregarProducto}"/>
+        <section th:replace="~{producto/fragmentos :: listadoProductos}"/>
         
         <footer th:replace="~{layout/plantilla :: footer}"/>
     </body>
