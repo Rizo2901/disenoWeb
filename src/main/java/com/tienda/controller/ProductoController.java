@@ -72,6 +72,8 @@ public class ProductoController {
     public String productoModificar(Producto producto, Model model) {
         producto = productoService.getProducto(producto);
         model.addAttribute("producto", producto);
+        var categorias=categoriaService.getCategorias(false);
+        model.addAttribute("categorias", categorias);
         return "/producto/modifica";
     } 
 }
