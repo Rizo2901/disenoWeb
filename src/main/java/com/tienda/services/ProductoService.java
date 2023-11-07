@@ -20,5 +20,14 @@ public interface ProductoService {
     public void delete(Producto producto);
     
     
+    //Devuelve la lista de productos filtraods en cosultas
+    public List<Producto> consutaQuery(double precioInf, double precioSup);
+    
+     //Devuelve la lista de productos filtraods en cosultas
+    public List<Producto> consutaJPQL(double precioInf, double precioSup);
+    
+       //Devuelve la lista de productos filtraods en cosultas
+    public List<Producto> consutaSQL(double precioInf, double precioSup);
+    
     
 }
