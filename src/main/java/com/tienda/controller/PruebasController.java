@@ -54,8 +54,8 @@ public class PruebasController {
             Model model) {
         var productos = productoService.consutaQuery(precioInf, precioSup);
         model.addAttribute("productos", productos);
-        model.addAttribute("precionInf", "precioInf");
-        model.addAttribute("precionSup", "precioSup");
+        model.addAttribute("precionInf", precioInf);
+        model.addAttribute("precionSup", precioSup);
 
         return "/pruebas/listado2";
     }
@@ -66,8 +66,8 @@ public class PruebasController {
             Model model) {
         var productos = productoService.consutaJPQL(precioInf, precioSup);
         model.addAttribute("productos", productos);
-        model.addAttribute("precionInf", "precioInf");
-        model.addAttribute("precionSup", "precioSup");
+        model.addAttribute("precionInf", precioInf);
+        model.addAttribute("precionSup", precioSup);
 
         return "/pruebas/listado2";
     }
@@ -78,8 +78,8 @@ public class PruebasController {
             Model model) {
         var productos = productoService.consutaSQL(precioInf, precioSup);
         model.addAttribute("productos", productos);
-        model.addAttribute("precionInf", "precioInf");
-        model.addAttribute("precionSup", "precioSup");
+       model.addAttribute("precionInf", precioInf);
+        model.addAttribute("precionSup", precioSup);
 
         return "/pruebas/listado2";
     }

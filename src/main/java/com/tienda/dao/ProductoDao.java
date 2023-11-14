@@ -22,7 +22,7 @@ public interface ProductoDao extends JpaRepository<Producto, Long> {
         
         //Ejemplo de #2 un metodo utilizando metodos Query
         @Query(nativeQuery=true, 
-                value="SELECT * FROM Producto where producto.precio between :precioInf AND :precioSup ORDER BY producto.descripcion ASC")
+                value="SELECT * FROM producto where producto.precio between :precioInf AND :precioSup ORDER BY producto.descripcion ASC")
         public List<Producto> consultaSQL
         (double precioInf, 
          double precioSup
