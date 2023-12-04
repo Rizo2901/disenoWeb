@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity6"
+      xmlns:th="http://www.thymeleaf.org">
+    <head th:replace="~{layout/plantilla :: head}">
+        <title>TechShop</title>
+    </head>
+    <body>
+        <header th:replace="~{layout/plantilla :: header}"></header>
+
+        <div class="container mt-5">
+            <div class="row roc-cols-3">
+                <div class="card">
+                    <div class="card-header text-center">
+                        [[#{reporte.usuario}]]
+                        <div class="card-body">
+                            <a th:href="@{/reportes/usuario?tipo=vPdf}"
+                               class="btn btn-primary">
+                                <i class="fas fa-eye"></i>
+                                <i class="fas fa-file-pdf"></i>
+                            </a>
+                            <a th:href="@{/reportes/usuario?tipo=Pdf}"
+                               class="btn btn-success">
+                                <i class="fas fa-download"></i>
+                                <i class="fas fa-file-pdf"></i>
+                            </a>
+                            <a th:href="@{/reportes/usuario?tipo=Xls}"
+                               class="btn btn-warning">
+                                <i class="fas fa-download"></i>
+                                <i class="fas fa-file-excel"></i>
+                            </a>
+                            <a th:href="@{/reportes/usuario?tipo=Csv}"
+                               class="btn btn-danger">
+                                <i class="fas fa-download"></i>
+                                <i class="fas fa-file-csv"></i>
+                            </a>
+
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header text-center">
+                        [[#{reporte.ventas}]]
+                        <div class="card-body">
+                            <a th:href="@{/reportes/ventas?tipo=vPdf}"
+                               class="btn btn-primary">
+                                <i class="fas fa-eye"></i>
+                                <i class="fas fa-file-pdf"></i>
+                            </a>
+                            <a th:href="@{/reportes/ventas?tipo=Pdf}"
+                               class="btn btn-success">
+                                <i class="fas fa-download"></i>
+                                <i class="fas fa-file-pdf"></i>
+                            </a>
+                            <a th:href="@{/reportes/ventas?tipo=Xls}"
+                               class="btn btn-warning">
+                                <i class="fas fa-download"></i>
+                                <i class="fas fa-file-excel"></i>
+                            </a>
+                            <a th:href="@{/reportes/ventas?tipo=Csv}"
+                               class="btn btn-danger">
+                                <i class="fas fa-download"></i>
+                                <i class="fas fa-file-csv"></i>
+                            </a>
+
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header text-center">
+                        [[#{reporte.ventas.totales}]]
+                        <div class="card-body">
+                            <a th:href="@{/reportes/ventas Totales?tipo=vPdf}"
+                               class="btn btn-primary">
+                                <i class="fas fa-eye"></i>
+                                <i class="fas fa-file-pdf"></i>
+                            </a>
+                            <a th:href="@{/reportes/ventas Totales?tipo=Pdf}"
+                               class="btn btn-success">
+                                <i class="fas fa-download"></i>
+                                <i class="fas fa-file-pdf"></i>
+                            </a>
+                            <a th:href="@{/reportes/ventas Totales?tipo=Xls}"
+                               class="btn btn-warning">
+                                <i class="fas fa-download"></i>
+                                <i class="fas fa-file-excel"></i>
+                            </a>
+                            <a th:href="@{/reportes/ventas Totales?tipo=Csv}"
+                               class="btn btn-danger">
+                                <i class="fas fa-download"></i>
+                                <i class="fas fa-file-csv"></i>
+                            </a>
+
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header text-center">
+                        [[#{reporte.categoria}]]
+                        <div class="card-body">
+                            <a th:href="@{/reportes/categoria?tipo=vPdf}"
+                               class="btn btn-primary">
+                                <i class="fas fa-eye"></i>
+                                <i class="fas fa-file-pdf"></i>
+                            </a>
+                            <a th:href="@{/reportes/categoria?tipo=Pdf}"
+                               class="btn btn-success">
+                                <i class="fas fa-download"></i>
+                                <i class="fas fa-file-pdf"></i>
+                            </a>
+                            <a th:href="@{/reportes/categoria?tipo=Xls}"
+                               class="btn btn-warning">
+                                <i class="fas fa-download"></i>
+                                <i class="fas fa-file-excel"></i>
+                            </a>
+                            <a th:href="@{/reportes/categoria?tipo=Csv}"
+                               class="btn btn-danger">
+                                <i class="fas fa-download"></i>
+                                <i class="fas fa-file-csv"></i>
+                            </a>
+
+                        </div>
+                        
+                    </div>
+                </div>
+                    <div class="card">
+                    <div class="card-header text-center">
+                        [[#{reporte.factura}]]
+                        <div class="card-body">
+                            <a th:href="@{/reportes/factura?tipo=vPdf}"
+                               class="btn btn-primary">
+                                <i class="fas fa-eye"></i>
+                                <i class="fas fa-file-pdf"></i>
+                            </a>
+                            <a th:href="@{/reportes/factura?tipo=Pdf}"
+                               class="btn btn-success">
+                                <i class="fas fa-download"></i>
+                                <i class="fas fa-file-pdf"></i>
+                            </a>
+                            <a th:href="@{/reportes/factura?tipo=Xls}"
+                               class="btn btn-warning">
+                                <i class="fas fa-download"></i>
+                                <i class="fas fa-file-excel"></i>
+                            </a>
+                            <a th:href="@{/reportes/factura?tipo=Csv}"
+                               class="btn btn-danger">
+                                <i class="fas fa-download"></i>
+                                <i class="fas fa-file-csv"></i>
+                            </a>
+
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        
+        <footer th:replace="~{layout/plantilla :: footer}"></footer>
+
+    </body>
+</html>
