@@ -62,7 +62,7 @@ public class ReporteController {
         return reporteService.generaReporte("categoria", null, tipo);
     }
     
-    @GetMapping("/ventas Totales")
+   @GetMapping("/ventasTotales")
     public ResponseEntity<Resource> reporteVentasTotales(
             @RequestParam String fechaInicio,
             @RequestParam String fechaFin,
@@ -70,8 +70,8 @@ public class ReporteController {
             throws IOException {
         Map<String,Object> parametros = new HashMap();
         parametros.put("fechaInicio", fechaInicio);
-        parametros.put("fechaFinal", fechaFin);
-        return reporteService.generaReporte("ventas Totales",parametros, tipo);        
+        parametros.put("fechaFin", fechaFin);
+        return reporteService.generaReporte("ventasTotales",parametros, tipo);        
     }
     
     
